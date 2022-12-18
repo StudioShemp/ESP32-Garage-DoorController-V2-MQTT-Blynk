@@ -118,15 +118,14 @@ Under the template "Events" tab, you'll need to add the event which sends the do
 <img src="https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Event.jpg?sanitize=true&raw=true" width="33%" "height=33%" />  
 
   And on the second tab, 'Events' tab, "Notifications"  
-  <h3></h3><br>
+  <h3> </h3><br>
 <img src="https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Event Notifications.jpg?sanitize=true&raw=true" width="33%" "height=33%" />  
   
-You can then download the blynk.iot mobile app and set up a "Mobile Dashboard".
-1 - add elements to the screen
-Advanced LCD  - configured to the Display(V3) datastream
+You can then download the blynk.iot mobile app and set up a "Mobile Dashboard" and add elements to the screen.
+<A Href="Advanced LCD  - configured to the Display(V3) datastream 
 Pushbutton (v7)
 
-<BR><H3></H3><br>  
+<BR><H3> </H3><br>  
 <img src="https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Web App.jpg?sanitize=true&raw=true" width="33%" "height=33%" />
 
 You then use the template to create a "device" in Blynk, and this device page provides the "Firmware Configuration" - the template id and auth token you will use at the top of your sketch to connect your ESP32 to Blynk services - e.g.  
@@ -139,7 +138,7 @@ You then use the template to create a "device" in Blynk, and this device page pr
 
   
 You will then have a web app to control your garage door. 
-<BR><H3></H3><br>  
+<BR><H3> </H3><br>  
 <img src="https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Web App.jpg?sanitize=true&raw=true" width="33%" "height=33%" />
   
 <BR><h2>Google Home</h2> <BR>
