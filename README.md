@@ -68,7 +68,7 @@ mqtt:
       entity_category: "config"
 ```
 <h3>Automations</h3><br>
-![Automations](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/main/images/Automations.jpg)
+![Automations](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Automations.jpg)
 
 <b>Sample Garage Door inclusions in automations.yaml</b><br>
 ```YAML
