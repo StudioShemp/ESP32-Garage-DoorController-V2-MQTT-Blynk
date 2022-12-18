@@ -69,8 +69,7 @@ mqtt:
       entity_category: "config"
 ```
 <h3>Automations</h3><br>
-![image](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Automations.jpg)
-![image](https://user-images.githubusercontent.com/44254504/161085339-df936c6c-519e-4767-8d74-5740f815928e.png)
+<img src="https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Automations.jpg?sanitize=true&raw=true" />
 <b>Sample Garage Door inclusions in automations.yaml</b><br>
 ```YAML
 - id: '1670604494618'
