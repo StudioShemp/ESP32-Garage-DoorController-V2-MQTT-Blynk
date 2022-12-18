@@ -67,8 +67,8 @@ mqtt:
       retain: false
       entity_category: "config"
 ```
-<h3>Automations<h3><br>
-![Automations](https://user-images.githubusercontent.com/44254504/208305226-a93f3410-e844-43e9-9025-03ed8fc41878.jpg)
+<h3>Automations</h3><br>
+![Automations](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/main/images/Automations.jpg)
 
 <b>Sample Garage Door inclusions in automations.yaml</b><br>
 ```YAML
