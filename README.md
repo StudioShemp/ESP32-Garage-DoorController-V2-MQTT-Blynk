@@ -117,13 +117,19 @@ I won't go in to the whole Blynk how-to, but you need to create an account on th
 Under the template "Events" tab, you'll need to add the event which sends the door open warnings:<br>
 <img src="https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Event.jpg?sanitize=true&raw=true" width="33%" "height=33%" />  
 
-  And on the second tab, 'Events' tab, "Notifications"  <h3></h3><br>
+  And on the second tab, 'Events' tab, "Notifications"  
+  <h3></h3><br>
 <img src="https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Event Notifications.jpg?sanitize=true&raw=true" width="33%" "height=33%" />  
   
-You can then download the blynk.iot mobile app and set up a "Mobile Dashboard"
+You can then download the blynk.iot mobile app and set up a "Mobile Dashboard".
+1 - add elements to the screen
+Advanced LCD  - configured to the Display(V3) datastream
+Pushbutton (v7)
 
+<BR><H3></H3><br>  
+<img src="https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Web App.jpg?sanitize=true&raw=true" width="33%" "height=33%" />
 
-You then use the tempalte to create a "device" in Blynk, and this device page provides the "Firmware Configuration" - the template id and auth token you will use at the top of your sketch to connect your ESP32 to Blynk services - e.g.  
+You then use the template to create a "device" in Blynk, and this device page provides the "Firmware Configuration" - the template id and auth token you will use at the top of your sketch to connect your ESP32 to Blynk services - e.g.  
 
 ```C++
 #define BLYNK_TEMPLATE_ID "TMPL**********"
@@ -131,9 +137,10 @@ You then use the tempalte to create a "device" in Blynk, and this device page pr
 #define BLYNK_AUTH_TOKEN "1234567abcdeFGhiJKlMnOp"
 ```
 
+  
 You will then have a web app to control your garage door. 
-
-
-
-<h2>Google Home</h2> <BR>
+<BR><H3></H3><br>  
+<img src="https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Web App.jpg?sanitize=true&raw=true" width="33%" "height=33%" />
+  
+<BR><h2>Google Home</h2> <BR>
 It's easy to set up voice activation using Google Home by setting up  IFTTT/Google Home integration. This lets you say "hey google, activate garage door" to call a webhook to your Blynk service. You will need your BLYNK_AUTH_TOKEN to set this up. 
