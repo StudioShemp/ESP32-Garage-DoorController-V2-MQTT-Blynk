@@ -1,4 +1,4 @@
-![Automations](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Automations.jpg?raw=true)
+
 # ESP32-Garage-DoorController-V2-MQTT-Blynk
 An ESP32 Garage Door Controller updated to publish door state and subscribe to door control messages via MQTT.
 
@@ -69,8 +69,8 @@ mqtt:
       entity_category: "config"
 ```
 <h3>Automations</h3><br>
-![Automations](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Automations.jpg?raw=true)
-
+![image](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Automations.jpg)
+![image](https://user-images.githubusercontent.com/44254504/161085339-df936c6c-519e-4767-8d74-5740f815928e.png)
 <b>Sample Garage Door inclusions in automations.yaml</b><br>
 ```YAML
 - id: '1670604494618'
