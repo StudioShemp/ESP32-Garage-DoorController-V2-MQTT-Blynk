@@ -1,5 +1,3 @@
-![ezcv logo](https://raw.githubusercontent.com/Descent098/ezcv/master/.github/logo.png)
-![Automations](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Automations.jpg)
 # ESP32-Garage-DoorController-V2-MQTT-Blynk
 An ESP32 Garage Door Controller updated to publish door state and subscribe to door control messages via MQTT.
 
@@ -70,7 +68,8 @@ mqtt:
       entity_category: "config"
 ```
 <h3>Automations</h3><br>
-![Automations](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Automations.jpg)
+Home Assistant Automations configuration
+  ![Automations](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Automations.jpg)
 
 <b>Sample Garage Door inclusions in automations.yaml</b><br>
 ```YAML
