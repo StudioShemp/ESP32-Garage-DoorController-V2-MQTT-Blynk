@@ -23,7 +23,7 @@ When triggered by either MQTT or Blynk (or Google to IFTTT to Blynk via webhook)
 <li>Optionally - in place of the ultrasonic sensor board, you can use a reed switch to sense the state of the door. 
 
 <H2>Wiring </H2><BR>
-![Schematic](https://user-images.githubusercontent.com/44254504/208305149-2f4289d4-aeb7-4266-9d4a-9f11ab868f98.jpg)
+<img src="https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Schematic.jpg?sanitize=true&raw=true" width="33%" "height=33%" />
 
 
 
@@ -70,9 +70,9 @@ mqtt:
 ```
 <h3>Automations</h3><br>
 Automations should be configured through the Home Assistant GUI:  <br>
-<img src="https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Automations.jpg?sanitize=true&raw=true" width=50% height=50% />
+<img src="https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Automations.jpg?sanitize=true&raw=true" width="33%" "height=33%" />
 
-<b>Sample Garage Door inclusions in automations.yaml</b><br>
+<b>Sample in automations.yaml</b><br>
   
 ```YAML
 - id: '1670604494618'
@@ -89,9 +89,9 @@ Automations should be configured through the Home Assistant GUI:  <br>
 ```
 
 <h3>Lovelace Card</h3><br>
-![lovelace](https://user-images.githubusercontent.com/44254504/208305264-6f4e507e-9d4e-4d78-bcbd-47e8512a28dd.jpg)
-
-<B>Garage Door inclusions in ui-lovelace.yaml</b><br>
+<img src="https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/lovelace.jpg?sanitize=true&raw=true" width="33%" "height=33%" />
+  
+<B>Sample ui-lovelace.yaml</b><br>
 ```YAML
 views:
     cards:
@@ -110,8 +110,14 @@ Blynk essentially provides virtual pins and devices that you can use to control 
 
 I won't go in to the whole Blynk how-to, but you need to create an account on the web, log in and enable developer mode, then create a template with datastreams and a dashboard.  It's simpler than it sounds.
 The datastreams page will look like this:
+<img src="https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Datastreams.jpg?sanitize=true&raw=true" width="33%" "height=33%" />
 
+Under the template "Events" tab, you'll need to add the event which sends the door open warnings:
+<img src="https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Event.jpg?sanitize=true&raw=true" width="33%" "height=33%" />  
 
+And on the second tab, "Notifications"  
+<img src="https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Event Notifications.jpg?sanitize=true&raw=true" width="33%" "height=33%" />  
+  
 You can then download the blynk.iot mobile app and set up a "Mobile Dashboard"
 
 
