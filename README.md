@@ -1,3 +1,4 @@
+![ezcv logo](https://raw.githubusercontent.com/Descent098/ezcv/master/.github/logo.png)
 # ESP32-Garage-DoorController-V2-MQTT-Blynk
 An ESP32 Garage Door Controller updated to publish door state and subscribe to door control messages via MQTT.
 
