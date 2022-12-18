@@ -69,8 +69,8 @@ mqtt:
       entity_category: "config"
 ```
 <h3>Automations</h3><br>
-Automations should be configured through the Home Assistant GUI:  
-<img src="https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Automations.jpg?sanitize=true&raw=true" size=50% />
+Automations should be configured through the Home Assistant GUI:  <br>
+<img src="https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Automations.jpg?sanitize=true&raw=true" width=50% height=50% />
 
 <b>Sample Garage Door inclusions in automations.yaml</b><br>
   
