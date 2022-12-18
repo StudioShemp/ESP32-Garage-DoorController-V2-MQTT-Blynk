@@ -109,13 +109,15 @@ I use Blynk (with IFTTT)  for the convenience of door control via my mobile phon
 Blynk essentially provides virtual pins and devices that you can use to control and read from youe ESP32 remotely. 
 
 I won't go in to the whole Blynk how-to, but you need to create an account on the web, log in and enable developer mode, then create a template with datastreams and a dashboard.  It's simpler than it sounds.
-The datastreams page will look like this:
+  
+<h3>Datastreams Tab</h3><br>
 <img src="https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Datastreams.jpg?sanitize=true&raw=true" width="33%" "height=33%" />
 
-Under the template "Events" tab, you'll need to add the event which sends the door open warnings:
+<H3>Events Tab</h3><br>  
+Under the template "Events" tab, you'll need to add the event which sends the door open warnings:<br>
 <img src="https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Event.jpg?sanitize=true&raw=true" width="33%" "height=33%" />  
 
-And on the second tab, "Notifications"  
+  And on the second tab, 'Events' tab, "Notifications"  <h3></h3><br>
 <img src="https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Event Notifications.jpg?sanitize=true&raw=true" width="33%" "height=33%" />  
   
 You can then download the blynk.iot mobile app and set up a "Mobile Dashboard"
