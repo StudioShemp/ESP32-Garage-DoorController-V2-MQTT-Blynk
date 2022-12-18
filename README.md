@@ -1,3 +1,4 @@
+![Automations](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Automations.jpg?raw=true)
 # ESP32-Garage-DoorController-V2-MQTT-Blynk
 An ESP32 Garage Door Controller updated to publish door state and subscribe to door control messages via MQTT.
 
