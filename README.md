@@ -18,7 +18,9 @@ When triggered by either MQTT or Blynk (or Google to IFTTT to Blynk via webhook)
 
 ![Ceiling](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/CeilingMount.jpg) 
 ![MeasuringDoor](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/DoorOpen.jpg)
-  
+
+Ceiling mounted, and showing the position of the open door, where the ultrasonic sensors measure a shorter distance and report the 'open' state.
+
 ## Parts 
 - ESP32 (I used a devkitC but almost any dev board will do. I've chosen pins that are all on one side of the ESP32 DevkitC just to save space in the box (breaking out  wiring on one side only)
 - A 5v DC relay board
