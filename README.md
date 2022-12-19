@@ -113,6 +113,9 @@ views:
         - entity: sensor.garage_door_state
 ```
 
+
+
+
 ## Blynk 
 
 I use Blynk (with IFTTT)  for the convenience of door control via my mobile phone, and for Google Home integration via IFTTT. Blynk is a free service for personal use as long as you have only a few devices to control. 
@@ -138,6 +141,9 @@ Under the template "Events" tab, you'll need to add the event which sends the do
   
 You can then download the blynk.iot mobile app and set up a "Mobile Dashboard" and add elements to the screen to create a Mobile App.<br>
 
+
+
+
 ### Mobile App Layout
 ![image](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Mobile_Template.png)
   <br> 
@@ -147,25 +153,32 @@ You can then download the blynk.iot mobile app and set up a "Mobile Dashboard" a
   3 Integer display - shows the distance readout from the ultrasonic sensor
   4 Button configured as an on/off switch. This is the button you would press if you wanted to mute "door open" alerts
 
+
 #### Advanced LCD setup 
 +Advanced LCD - Attached to Datastream v3 <br>
 ![image](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Datastream%20Settings%20-%20Mobile%20-%20Display%20V3.png)
   <br>
 
+
 #### Pushbutton setup
 +Pushbutton - Attached to Datastream V7 <br>
  ![image](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Datastream%20Settings%20-%20Mobile%20-%20PressButton%20V7.png)
+
 
 #### Integer Display setup
 +Integer Display - Attached to Datastream V5<br>
 ![image](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Datastream%20Settings%20-%20Mobile%20-%20Integer%20V5.png)
 
+
 #### Switch setup
 +Switch - Attached to Datastream V0 <br>
 ![image](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Datastream%20Settings%20-%20Mobile%20-%20Switch%20V7.png)
 
+
 #### Note
 There is also a "web" template that is set up in the developer settings in the Blynk developer web site. It sets up a web page with similar buttons / displays as the mobile app, so you could control your device via a web page if that's your thing. Blynk advise that this should also be done but I'm not certain it's necessary.   
+
+
 
 ### Setting it all up
 Once you have your datastreams set up, and your app layout set up and connected to the datastreams, it's time to use the template to create a "device" in the Blynk devloper site. This is a critical step as it provides the "Firmware Configuration" - the template id and auth token you will use at the top of your sketch to connect your ESP32 to Blynk services and use the app. 
@@ -182,6 +195,8 @@ You should then see the device go "active" in the Blynk device web page, and the
 
 ![Web App](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Web%20App.png) 
   
+
+
 ## Google Home
 <BR>
 It's easy to set up voice activation using Google Home by setting up  IFTTT/Google Home integration. This lets you say "hey google, activate garage door" to call a webhook to your Blynk service. You will need your BLYNK_AUTH_TOKEN, and an MQTT account linked to Google Home. 
@@ -200,6 +215,6 @@ You will need to log in to MQTT and set up a new applet using the Google Home V2
 
 ### Then
 
-![IFTTT1](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/IFTTT-then.jpg)
+![IFTTT1](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/IFTTT-Then.jpg)
 
 
