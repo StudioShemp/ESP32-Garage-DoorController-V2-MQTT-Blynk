@@ -154,7 +154,7 @@ You can then download the blynk.iot mobile app and set up a "Mobile Dashboard" a
 
 
 ### Mobile App Layout
-![image](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Mobile_Template.png)
+![image](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Mobile_template.png)
   <br> 
   This image shows the elements you would include on the Blynk mobile app. 
   1 LCD (Advanced LCD) - Grey box at top of screen (configured to use Virtual pin V3 from your datastreams)
