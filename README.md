@@ -21,6 +21,24 @@ When triggered by either MQTT or Blynk (or Google to IFTTT to Blynk via webhook)
 
 Ceiling mounted, and showing the position of the open door, where the ultrasonic sensors measure a shorter distance and report the 'open' state.
 
+## Getting it going
+The code is commented so that if you don't want Blynk or don't use MQTT, those sections are easy to remove. 
+
+To get everything running you'll need to replace the following lines of code with your own settings:
+```c++
+#define BLYNK_TEMPLATE_ID "XXXXXXXX"   /** Only required if using Blynk */ //get this when you create your Blynk device on https//blynk.console
+#define BLYNK_DEVICE_NAME "Garage Door Controller V2"   /** Only required if using Blynk */ //get this when you create your Blynk device on https//blynk.console 
+#define BLYNK_AUTH_TOKEN "XXXXXXXX"    /** Only required if using Blynk */ //get this when you create your Blynk device on https//blynk.console
+
+char ssid[] = "XXXXXXXX";	  //replace with your wifi SSID
+char pass[] = "XXXXXXXX";	  //replace with your wifi password
+
+const char* mqttUser = "XXXXXXXX";     /** Only required if using MQTT */ //replace with your Mosquitto username
+const char* mqttPassword = "XXXXXXXX"; /** Only required if using MQTT */ //replace with your Mosquitto password
+
+char mqtt_server[] = "XXXXXXXX";   /** Only required if using MQTT */  //replace with your own MQTT Server IP Address e.g. char mqtt_server[] = "192.168.1.254";
+```
+
 ## Parts 
 - ESP32 (I used a devkitC but almost any dev board will do. I've chosen pins that are all on one side of the ESP32 DevkitC just to save space in the box (breaking out  wiring on one side only)
 - A 5v DC relay board
@@ -139,6 +157,27 @@ I won't go in to the whole Blynk how-to, but you need to create an account on th
 #### Mobile view of Datastreams
 ![Mobile DataStreams](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Datastreams%20-%20Mobile%20Template.png)
 
+
+#### Advanced LCD Datastream setup 
++Advanced LCD - Attached to Datastream v3 <br>
+![image](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Datastream%20Settings%20-%20Mobile%20-%20Display%20V3.png)
+  <br>
+
+
+#### Pushbutton Datastream setup
++Pushbutton - Attached to Datastream V7 <br>
+ ![image](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Datastream%20Settings%20-%20Mobile%20-%20PressButton%20V7.png)
+
+
+#### Integer Display Datastream setup
++Integer Display - Attached to Datastream V5<br>
+![image](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Datastream%20Settings%20-%20Mobile%20-%20Integer%20V5.png)
+
+
+#### Switch Datastream setup
++Switch - Attached to Datastream V0 <br>
+![image](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Datastream%20Settings%20-%20Mobile%20-%20Switch%20V0.png)
+
 ### Events Tab
 
 Under the template "Events" tab, you'll need to add the event which sends the door open warnings:<br>
@@ -151,41 +190,38 @@ Under the template "Events" tab, you'll need to add the event which sends the do
 You can then download the blynk.iot mobile app and set up a "Mobile Dashboard" and add elements to the screen to create a Mobile App.<br>
 
 
-
-
 ### Mobile App Layout
 ![image](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Mobile_template.png)
   <br> 
-  This image shows the elements you would include on the Blynk mobile app. 
-  1 LCD (Advanced LCD) - Grey box at top of screen (configured to use Virtual pin V3 from your datastreams)
-  2 Pushbutton - momentary, the button you will use to open and close the garage door  (configured to use Virtual pin V7 from your datastreams)
-  3 Integer display - shows the distance readout from the ultrasonic sensor
-  4 Button configured as an on/off switch. This is the button you would press if you wanted to mute "door open" alerts
+  This image shows the elements/widgets you would include on the Blynk mobile app. 
+ + LCD (Advanced LCD) - Grey box at top of screen (configured to use Virtual pin V3 from your datastreams)
+ + Pushbutton - momentary, the button you will use to open and close the garage door  (configured to use Virtual pin V7 from your datastreams)
+ + Integer display - shows the distance readout from the ultrasonic sensor
+ + Button configured as an on/off switch. This is the button you would press if you wanted to mute "door open" alerts
 
-
-#### Advanced LCD setup 
-+Advanced LCD - Attached to Datastream v3 <br>
-![image](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Datastream%20Settings%20-%20Mobile%20-%20Display%20V3.png)
+#### Advanced LCD widget setup 
++Advanced LCD - V3 <br>
+![image](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/LCD%20Settings%20-%20Mobile%20-V3.png)
   <br>
 
 
-#### Pushbutton setup
-+Pushbutton - Attached to Datastream V7 <br>
- ![image](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Datastream%20Settings%20-%20Mobile%20-%20PressButton%20V7.png)
+#### Pushbutton widget setup
++Pushbutton - V7 <br>
+ ![image](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Pushbutton%20Settings%20-%20Mobile%20-V7.png)
 
 
-#### Integer Display setup
-+Integer Display - Attached to Datastream V5<br>
-![image](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Datastream%20Settings%20-%20Mobile%20-%20Integer%20V5.png)
+#### Integer Display witdget setup
++Integer Display - V5<br>
+![image](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Value%20Display%20Settings%20-%20Mobile%20-%20V5.png)
 
 
-#### Switch setup
-+Switch - Attached to Datastream V0 <br>
-![image](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Datastream%20Settings%20-%20Mobile%20-%20Switch%20V7.png)
+#### Switch widget setup
++Switch - V0 <br>
+![image](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Switch%20Settings%20-%20Mobile%20-%20V0.png)
 
 
 #### Note
-There is also a "web" template that is set up in the developer settings in the Blynk developer web site. It sets up a web page with similar buttons / displays as the mobile app, so you could control your device via a web page if that's your thing. Blynk advise that this should also be done but I'm not certain it's necessary.   
+There is also a "web" vrsion of this layout that is set up in the developer settings in the Blynk developer web site. ie - It sets up a web page with similar buttons / displays as the mobile app, so you could control your device via a web page if that's your thing. Blynk advise that this should also be done but I'm not certain it's necessary.   
 
 
 
