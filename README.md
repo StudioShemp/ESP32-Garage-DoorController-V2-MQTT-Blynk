@@ -71,7 +71,7 @@ The MQTT topic "garagedoor/operate" listens for a "toggle" message
 
 To read the values in Home Assistant via MQTT make the following changes to the MQTT settings in configuration.yaml
 
-## Garage Door sensor templates in the MQTT section of configuration.yaml
+### Garage Door sensor templates in the MQTT section of configuration.yaml
 
 ```YAML
 mqtt:
@@ -92,7 +92,7 @@ mqtt:
       value_template: '{{ value_json.cover }}'
 ```
 
-## Garage Door button template in the MQTT section of configuration.yaml
+### Garage Door button template in the MQTT section of configuration.yaml
 ```yaml
   button:
     - command_topic: "garagedoor/operate"
@@ -103,7 +103,7 @@ mqtt:
       retain: false
       entity_category: "config"
 ```
-## Automations
+### Automations
 
 Automations should be configured through the Home Assistant GUI: 
 
@@ -126,7 +126,7 @@ Automations should be configured through the Home Assistant GUI:
   mode: single
 ```
 
-## Lovelace Card
+### Lovelace Card
 
 ![Lovelace](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/lovelace.jpg)
   
