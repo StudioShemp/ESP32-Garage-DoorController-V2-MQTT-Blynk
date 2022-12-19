@@ -76,6 +76,7 @@ mqtt:
 ## Automations
 
 Automations should be configured through the Home Assistant GUI: 
+
 ![Automations](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Automations.jpg)
 
 #### Sample in automations.yaml
