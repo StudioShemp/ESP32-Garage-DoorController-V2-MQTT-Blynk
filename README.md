@@ -199,8 +199,8 @@ You can then download the blynk.iot mobile app and set up a "Mobile Dashboard" a
   This image shows the elements/widgets you would include on the Blynk mobile app. 
  + LCD (Advanced LCD) - Grey box at top of screen (configured to use Virtual pin V3 from your datastreams)
  + Pushbutton - momentary, the button you will use to open and close the garage door  (configured to use Virtual pin V7 from your datastreams)
- + Integer display - shows the distance readout from the ultrasonic sensor
- + Button configured as an on/off switch. This is the button you would press if you wanted to mute "door open" alerts
+ + Integer display - shows the distance readout from the ultrasonic sensor (configured to use Virtual pin V5 from your datastreams)
+ + Button configured as an on/off switch. This is the button you would press if you wanted to mute "door open" alerts (configured to use Virtual pin V0 from your datastreams)
 
 #### Advanced LCD widget setup 
 +Advanced LCD - V3 <br>
