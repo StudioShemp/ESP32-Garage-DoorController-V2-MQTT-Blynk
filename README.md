@@ -15,18 +15,25 @@ Without a car parked the distance to the floor is 240cm, and with a car parked i
 distance topic. Finally, there's a Blynk alert for a garage door that's been left open for too long (set at 3 minutes). 
   
 When triggered by either MQTT or Blynk (or Google to IFTTT to Blynk via webhook) it toggles pin 32 high for 0.5 seconds. This drives a 5v relay board which toggles the open/close switch pins on the garage door controller, as if you were pushing a wired button.  My Garage door controller has only one button for open/close. It would be relatively simple to alter the code to add seperate open and close relays on different pins. 
+
+![Ceiling](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/CeilingMount.jpg) 
+![MeasuringDoor](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/DoorOpen.jpg)
   
 ## Parts 
 - ESP32 (I used a devkitC but almost any dev board will do. I've chosen pins that are all on one side of the ESP32 DevkitC just to save space in the box (breaking out  wiring on one side only)
 - A 5v DC relay board
 - An ultrasonic sensor board
+- A small case. I used a small Jaycar or Altronics project box.  
 - Optionally - in place of the ultrasonic sensor board, you can use a reed switch to sense the state of the door. 
+
+
 
 ## Wiring 
 
 ![Schematic](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Schematic.jpg)
 
-
+## Assembled
+![Schematic](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Innards.jpg)
 
 ## Optional 
 
@@ -215,6 +222,6 @@ You will need to log in to MQTT and set up a new applet using the Google Home V2
 
 ### Then
 
-![IFTTT1](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/IFTTT-Then.jpg)
+![IFTTT3](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/IFTTT-Then.jpg)
 
 
