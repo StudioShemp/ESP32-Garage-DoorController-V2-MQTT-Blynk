@@ -139,22 +139,22 @@ You can then download the blynk.iot mobile app and set up a "Mobile Dashboard" a
 ![image](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Datastreams%20-%20Mobile%20Template.png?sanitize=true&raw=true)
   <br> 
 +Advanced LCD - Attached to Datastream v3 <br>
-[image]("https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Datastream%20Settings%20-%20Mobile%20-%20Display%20V3.png")
+![image]("https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Datastream%20Settings%20-%20Mobile%20-%20Display%20V3.png")
   <br>
   
 +Pushbutton - Attached to Datastream V7 <br>
- [image]("https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Datastream%20Settings%20-%20Mobile%20-%20PressButton%20V7.png")
+ ![image]("https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Datastream%20Settings%20-%20Mobile%20-%20PressButton%20V7.png")
               
 +Integer Display - Attached to Datastream V5<br>
-[image]("https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Datastream%20Settings%20-%20Mobile%20-%20Integer%20V5.png")
+![image]("https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Datastream%20Settings%20-%20Mobile%20-%20Integer%20V5.png")
               
 +Switch - Attached to Datastream V0 <br>
-[image]("https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Datastream%20Settings%20-%20Mobile%20-%20Switch%20V7.png")
+![image]("https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Datastream%20Settings%20-%20Mobile%20-%20Switch%20V7.png")
 
 
 #### Web App image
 
-<img src="https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Web App.jpg?sanitize=true&raw=true" width="33%" "height=33%" />
+![Web App]("https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Web%20App.jpg?sanitize=true&raw=true")
 
 You then use the template to create a "device" in Blynk, and this device page provides the "Firmware Configuration" - the template id and auth token you will use at the top of your sketch to connect your ESP32 to Blynk services - e.g.  
 
@@ -169,7 +169,7 @@ You will then have a web app to control your garage door.
 
   
 
-<img src="https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Web App.jpg?sanitize=true&raw=true" width="33%" "height=33%" />
+![Web App]("https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Web%20App.jpg?sanitize=true&raw=true" width="33%" "height=33%") 
   
 ## Google Home
 <BR>
