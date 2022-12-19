@@ -69,9 +69,9 @@ The MQTT topic "garagedoor/operate" listens for a "toggle" message
 
 ## Home Assistant 
 
-To read the values in Home Assistant via MQTT 
+To read the values in Home Assistant via MQTT make the following changes to the MQTT settings in configuration.yaml
 
-## Garage Door inclusions in configuration.yaml
+## Garage Door sensor templates in the MQTT section of configuration.yaml
 
 ```YAML
 mqtt:
@@ -90,7 +90,10 @@ mqtt:
       name: "Garage Door Cover"
       unique_id: garage_door_cover
       value_template: '{{ value_json.cover }}'
+```
 
+## Garage Door button template in the MQTT section of configuration.yaml
+```yaml
   button:
     - command_topic: "garagedoor/operate"
       availability_topic: "zigbee2mqtt/bridge/state"
@@ -106,7 +109,7 @@ Automations should be configured through the Home Assistant GUI:
 
 ![Automations](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Automations.jpg)
 
-#### Sample in automations.yaml
+#### This should yield something like this in automations.yaml
 
   
 ```YAML
@@ -201,7 +204,7 @@ You can then download the blynk.iot mobile app and set up a "Mobile Dashboard" a
 
 #### Advanced LCD widget setup 
 +Advanced LCD - V3 <br>
-![image](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/LCD%20Settings%20-%20Mobile%20-V3.png)
+![image](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/LCD%20Settings%20-%20Mobile%20-%20V3.png)
   <br>
 
 
@@ -221,7 +224,7 @@ You can then download the blynk.iot mobile app and set up a "Mobile Dashboard" a
 
 
 #### Note
-There is also a "web" vrsion of this layout that is set up in the developer settings in the Blynk developer web site. ie - It sets up a web page with similar buttons / displays as the mobile app, so you could control your device via a web page if that's your thing. Blynk advise that this should also be done but I'm not certain it's necessary.   
+There is also a "web" version of this layout that is set up in the developer settings in the Blynk developer web site. ie - It sets up a web page with similar buttons / displays as the mobile app, so you could control your device via a web page if that's your thing. Blynk advise that this should also be done but I'm not certain it's necessary.   
 
 
 
