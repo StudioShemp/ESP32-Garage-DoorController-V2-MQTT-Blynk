@@ -123,8 +123,11 @@ Under the template "Events" tab, you'll need to add the event which sends the do
 <img src="https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Event Notifications.jpg?sanitize=true&raw=true" width="33%" "height=33%" />  
   
 You can then download the blynk.iot mobile app and set up a "Mobile Dashboard" and add elements to the screen to create a Mobile App.<br>
-<img src="https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Datastreams - Mobile Template.png?sanitize=true&raw=true" width="33%" "height=33%" /> 
-<li>Advanced LCD - Attached to Datastream v3 <a href="https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Datastream%20Settings%20-%20Mobile%20-%20Display%20V3.png" 1></a>
+![image](https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Datastreams - Mobile Template.png?sanitize=true&raw=true)
+  <br> 
+<li>Advanced LCD - Attached to Datastream v3 <br>
+[image]("https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Datastream%20Settings%20-%20Mobile%20-%20Display%20V3.png")
+  <br>
 <li>Pushbutton - Attached to Datastream V7 <a href="https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Datastream%20Settings%20-%20Mobile%20-%20PressButton%20V7.png" 2></a>
 <li>Integer Display - Attached to Datastream V5 <a href="https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Datastream Settings - Mobile - Integer V5.png" 3></a>
 <li>Switch - Attached to Datastream V0 <a href="https://github.com/StudioShemp/ESP32-Garage-DoorController-V2-MQTT-Blynk/blob/main/images/Datastream Settings - Mobile - Switch V7.png" 4></a>
